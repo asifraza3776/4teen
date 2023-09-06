@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4teen</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Include Tailwind CSS stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One&family=Bowlby+One+SC&family=Poppins:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="bg-white py-4">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+
+        <!-- Mobile Navigation Icon (moved inside the header section) -->
+        <div class="mobile-nav-icon lg:hidden">
+          <a href="#" class="text-gray-900 hover:text-gray-600">
+            <i class="fas fa-bars text-lg"></i>
+          </a>
+        </div>
+          <!-- Logo -->
+          <h1
+            class="hover:cursor-pointer text-4xl font-bold"
+            style="font-family: 'Bebas Neue', sans-serif"
+          >
+            4TEEN
+          </h1>
+
+          <!-- Navbar -->
+          <nav class="hidden lg:flex space-x-4">
+            <ul class="flex space-x-4">
+              <li>
+                <a href="#" class="text-gray-900 hover:text-gray-600"
+                  >NEW ARRIVALS</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-900 hover:text-gray-600"
+                  >COLLECTION</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-900 hover:text-gray-600"
+                  >ALL PRODUCTS</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Search Bar  -->
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Search"
+              class="bg-gray-200 border rounded-full px-4 py-2 focus:outline-none focus:bg-white transition duration-300"
+            />
+            <button class="absolute right-0 top-0 mt-3 mr-3">
+              <i class="fas fa-search text-gray-900 hover:text-gray-600"></i>
+            </button>
+          </div>
+
+          <!-- Icons (for mobile view) -->
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-900 hover:text-gray-600">
+              <i class="fas fa-shopping-cart text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-900 hover:text-gray-600">
+              <i class="fas fa-user text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+          <!-- Hide navigation icon for desktop (large screens) -->
+    <div class="mobile-nav-icon lg:hidden">
+      <a href="#" class="text-gray-900 hover:text-gray-600" id="mobileNavToggle">
+       
+      </a>
+    </div>
+
+    <!-- Hidden Mobile Navigation Menu -->
+    <nav class="hidden mobile-nav">
+      <ul class="flex flex-col space-y-4">
+        <li>
+          <a href="#" class="text-gray-900 hover:text-gray-600">NEW ARRIVALS</a>
+        </li>
+        <li>
+          <a href="#" class="text-gray-900 hover:text-gray-600">COLLECTION</a>
+        </li>
+        <li>
+          <a href="#" class="text-gray-900 hover:text-gray-600">ALL PRODUCTS</a>
+        </li>
+      </ul>
+    </nav>
+    </section>
+
+
+    <!-- HERO SECTION -->
+    <section>
+      <img src="./mg/Screenshot 2023-09-05 at 9.56.47 PM.png" alt="img" />
+      <div class="buttons flex flex-col md:flex-row justify-between">
+        <div class="relative mb-4 md:mb-0">
+          <button
+            href="#"
+            class="button absolute bottom-0 md:bottom-5 left-0 md:left-5 rounded-full p-3 md:p-5 border border-black text-base md:text-lg hover:bg-black hover:text-white"
+          >
+            Typography Oversized
+          </button>
+        </div>
+        <div class="relative">
+          <button
+            href="#new-arrivals"
+            onclick="#new-arrivals"
+            class="button absolute bottom-0 md:bottom-5 right-0 md:right-5 rounded-full p-3 md:p-5 border border-black text-base md:text-lg hover:bg-black hover:text-white"
+            style="font-family: 'Bebas Neue', sans-serif"
+          >
+            New Arrivals
+            <i class="fas fa-arrow-right ml-2"></i>
+          </button>
+        </div>
+      </div>
+      
+
+      <!-- Video Section -->
+          <!-- video -->
+    <div>
+      <video
+        autoplay
+        muted
+        loop>
+        <source src="./video/Bewakoof.mp4" type="video/mp4" />
+      </video>
+
+
+
+
+    </div>
+      <!-- Video Section -->
+      <!-- Video Section -->
+      <section class="bg-black text-white py-10">
+        <h1
+          class="text-center text-4xl"
+          style="font-family: 'Bebas Neue', sans-serif"
+        >
+          Follow Us on @4teen
+        </h1>
+      </section>
+
+      <!-- NEW Arrivals -->
+      <section class="container mx-auto mt-10 md:mt-16 mb-10 md:mb-16 New Arrivals" id="new-arrivals">
+        <h2
+          class="text-center text-4xl md:text-5xl font-bold mb-6"
+          style="font-family: 'Bebas Neue', sans-serif"
+        >
+          New Arrivals
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="col-span-1">
+            <img src="./mg/img1.jpeg" alt="Left Image" class="w-full" />
+          </div>
+          <div class="col-span-1 grid grid-cols-2 gap-4">
+            <div class="col-span-1">
+              <img src="./mg/img2.jpeg" alt="Image 1" class="w-full" />
+            </div>
+            <div class="col-span-1">
+              <img src="./mg/img6.jpeg" alt="Image 2" class="w-full" />
+            </div>
+            <div class="col-span-1">
+              <img src="./mg/img4.jpeg" alt="Image 3" class="w-full" />
+            </div>
+            <div class="col-span-1">
+              <img src="./mg/img7.jpeg" alt="Image 4" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Find My Category Section -->
+    <section class="text-center mx-auto max-w-screen-lg mt-10 mb-10">
+      <h2
+        class="text-center text-4xl md:text-5xl font-bold mb-6"
+        style="font-family: 'Bebas Neue', sans-serif"
+      >
+        Find my Category
+      </h2>
+      <!-- Search Input -->
+
+      <div class="flex justify-center items-center h-16">
+        <div class="relative w-full max-w-md">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by category..."
+            class="w-full h-10 px-4 py-2 text-gray-900 placeholder-black bg-white border border-black-300 rounded-full focus:outline-none focus:ring-0 focus:border-black transition duration-300"
+            onkeyup=search()
+          />
+          <i class="absolute right-3 top-3 text-black fas fa-search"></i>
+        </div>
+      </div>
+      
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="product-list">
+        <!-- Dynamic Cards will be generated here -->
+      </div>
+    </section>
+
+<!-- Footer -->
+<section class="text-center bg-black">
+  <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl font-bebas text-white mb-6" style="font-family: 'Bebas Neue', sans-serif">
+      BRAND INFO
+    </h1>
+
+    <ul class="list-none flex flex-wrap justify-center sm:justify-center space-x-0 sm:space-x-10 text-white">
+      <li class="mb-2 sm:mb-0">
+        <a href="#" class="hover:bg-white hover:text-black px-4 py-2 rounded transition duration-300">About Us</a>
+      </li>
+      <li class="mb-2 sm:mb-0">
+        <a href="#" class="hover:bg-white hover:text-black px-4 py-2 rounded transition duration-300">Contact Us</a>
+      </li>
+      <li class="mb-2 sm:mb-0">
+        <a href="#" class="hover:bg-white hover:text-black px-4 py-2 rounded transition duration-300">Shipping Policy</a>
+      </li>
+      <li class="mb-2 sm:mb-0">
+        <a href="#" class="hover:bg-white hover:text-black px-4 py-2 rounded transition duration-300">Terms & Condition</a>
+      </li>
+      <li class="mb-2 sm:mb-0">
+        <a href="#" class="hover:bg-white hover:text-black px-4 py-2 rounded transition duration-300">Refunds & Cancellations</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

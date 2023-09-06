@@ -1,0 +1,37 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom styles here */
+/* Hide the mobile navigation by default */
+.mobile-nav {
+    display: none;
+    animation: slide-out 0.3s ease-out;
+}
+
+/* Animation for showing the mobile navigation */
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Animation for hiding the mobile navigation */
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Show the mobile navigation when the mobile-nav-icon is clicked */
+.mobile-nav-open .mobile-nav {
+    display: block;
+    animation: slide-in 0.3s ease-in;
+}
