@@ -113,5 +113,3 @@ cardData.forEach(card => {
   const cardHTML = generateCardHTML(card);
   productList.innerHTML += cardHTML;
 });
-
-
