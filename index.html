@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>4teen</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
     <!-- Include Tailwind CSS stylesheet -->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
@@ -26,93 +27,71 @@
     />
   </head>
   <body>
-    <!-- Header -->
-    <section class="bg-white py-4">
+     <!-- Header -->
+     <section class="bg-white py-4">
       <div class="container mx-auto">
-        <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between">
 
-        <!-- Mobile Navigation Icon (moved inside the header section) -->
-        <div class="mobile-nav-icon lg:hidden">
-          <a href="#" class="text-gray-900 hover:text-gray-600">
-            <i class="fas fa-bars text-lg"></i>
-          </a>
-        </div>
-          <!-- Logo -->
-          <h1
-            class="hover:cursor-pointer text-4xl font-bold"
-            style="font-family: 'Bebas Neue', sans-serif"
-          >
-            4TEEN
-          </h1>
+<!-- Hide navigation icon for desktop (large screens) -->
+<div class="mobile-nav-icon lg:hidden" id="mobileNavToggle">
+  <a href="#" class="text-gray-900 hover:text-gray-600">
+      <i class="fas fa-bars text-lg"></i>
+  </a>
+</div>
 
-          <!-- Navbar -->
-          <nav class="hidden lg:flex space-x-4">
-            <ul class="flex space-x-4">
-              <li>
-                <a href="#" class="text-gray-900 hover:text-gray-600"
-                  >NEW ARRIVALS</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-900 hover:text-gray-600"
-                  >COLLECTION</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-gray-900 hover:text-gray-600"
-                  >ALL PRODUCTS</a
-                >
-              </li>
-            </ul>
-          </nav>
+<!-- Hidden Mobile Navigation Menu -->
+<nav class="hidden mobile-nav" id="mobileNav">
+  <ul class="flex flex-col space-y-4">
+      <li>
+          <a href="#newarrivals" class="text-gray-900 hover:text-gray-600">NEW ARRIVALS</a>
+      </li>
+      <li>
+          <a href="#collection" class="text-gray-900 hover:text-gray-600">COLLECTION</a>
+      </li>
+      <li>
+          <a href="#allproduct" class="text-gray-900 hover:text-gray-600">ALL PRODUCTS</a>
+      </li>
+  </ul>
+</nav>
 
-          <!-- Search Bar  -->
-          <div class="relative">
-            <input
-              type="text"
-              placeholder="Search"
-              class="bg-gray-200 border rounded-full px-4 py-2 focus:outline-none focus:bg-white transition duration-300"
-            />
-            <button class="absolute right-0 top-0 mt-3 mr-3">
-              <i class="fas fa-search text-gray-900 hover:text-gray-600"></i>
-            </button>
+              <!-- Logo -->
+              <h1
+                  class="hover:cursor-pointer text-4xl font-bold"
+                  style="font-family: 'Bebas Neue', sans-serif"
+              >
+                  4TEEN
+              </h1>
+
+              <!-- Navbar -->
+              <nav class="hidden lg:flex space-x-4">
+                  <ul class="flex space-x-4">
+                      <li>
+                          <a href="#newarrivals" class="text-gray-900 hover:text-gray-600">NEW ARRIVALS</a>
+                      </li>
+                      <li>
+                          <a href="#collection" class="text-gray-900 hover:text-gray-600">COLLECTION</a>
+                      </li>
+                      <li>
+                          <a href="#allproduct" class="text-gray-900 hover:text-gray-600">ALL PRODUCTS</a>
+                      </li>
+                  </ul>
+              </nav>
+              <!-- Icons (for mobile view) -->
+              <div class="flex space-x-4">
+                  <a href="#" class="text-gray-900 hover:text-gray-600">
+                      <i class="fas fa-shopping-cart text-lg"></i>
+                  </a>
+                  <a href="#" class="text-gray-900 hover:text-gray-600">
+                      <i class="fas fa-user text-lg"></i>
+                  </a>
+              </div>
           </div>
-
-          <!-- Icons (for mobile view) -->
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-900 hover:text-gray-600">
-              <i class="fas fa-shopping-cart text-lg"></i>
-            </a>
-            <a href="#" class="text-gray-900 hover:text-gray-600">
-              <i class="fas fa-user text-lg"></i>
-            </a>
-          </div>
-        </div>
       </div>
 
 
-          <!-- Hide navigation icon for desktop (large screens) -->
-    <div class="mobile-nav-icon lg:hidden">
-      <a href="#" class="text-gray-900 hover:text-gray-600" id="mobileNavToggle">
-       
-      </a>
-    </div>
 
-    <!-- Hidden Mobile Navigation Menu -->
-    <nav class="hidden mobile-nav">
-      <ul class="flex flex-col space-y-4">
-        <li>
-          <a href="#" class="text-gray-900 hover:text-gray-600">NEW ARRIVALS</a>
-        </li>
-        <li>
-          <a href="#" class="text-gray-900 hover:text-gray-600">COLLECTION</a>
-        </li>
-        <li>
-          <a href="#" class="text-gray-900 hover:text-gray-600">ALL PRODUCTS</a>
-        </li>
-      </ul>
-    </nav>
-    </section>
+
+  </section>
 
 
     <!-- HERO SECTION -->
@@ -122,7 +101,7 @@
         <div class="relative mb-4 md:mb-0">
           <button
             href="#"
-            class="button absolute bottom-0 md:bottom-5 left-0 md:left-5 rounded-full p-3 md:p-5 border border-black text-base md:text-lg hover:bg-black hover:text-white"
+            class="button absolute bottom-0 md:bottom-5 left-0 md:left-5 rounded-full p-3 md:p-5 border border-black text-base md:text-lg hover:bg-black hover:text-white pr-10"
           >
             Typography Oversized
           </button>
@@ -130,9 +109,9 @@
         <div class="relative">
           <button
             href="#new-arrivals"
-            onclick="#new-arrivals"
+            
             class="button absolute bottom-0 md:bottom-5 right-0 md:right-5 rounded-full p-3 md:p-5 border border-black text-base md:text-lg hover:bg-black hover:text-white"
-            style="font-family: 'Bebas Neue', sans-serif"
+            style="font-family: 'Bebas Neue', sans-serif pr-10"
           >
             New Arrivals
             <i class="fas fa-arrow-right ml-2"></i>
@@ -151,12 +130,8 @@
         <source src="./video/Bewakoof.mp4" type="video/mp4" />
       </video>
 
-
-
-
     </div>
-      <!-- Video Section -->
-      <!-- Video Section -->
+
       <section class="bg-black text-white py-10">
         <h1
           class="text-center text-4xl"
@@ -212,7 +187,7 @@
             id="searchInput"
             placeholder="Search by category..."
             class="w-full h-10 px-4 py-2 text-gray-900 placeholder-black bg-white border border-black-300 rounded-full focus:outline-none focus:ring-0 focus:border-black transition duration-300"
-            onkeyup=search()
+            onkeyup="search()"
           />
           <i class="absolute right-3 top-3 text-black fas fa-search"></i>
         </div>
@@ -254,6 +229,5 @@
 
 
 
-    <script src="script.js"></script>
   </body>
 </html>
